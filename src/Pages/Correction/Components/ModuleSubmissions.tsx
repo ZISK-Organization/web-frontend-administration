@@ -49,7 +49,6 @@ export default function ModuleSubmissions({ moduleId, submissions, updatePoints 
           ) : (
             <TextModuleSubmissions
               updatePoints={updatePoints}
-              moduleId={moduleId}
               moduleData={moduleData as textModuleMeta}
               submissions={submissions}
             />
