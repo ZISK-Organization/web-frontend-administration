@@ -13,6 +13,7 @@ export default function Footer({ hidden, changeTheme }: IProps) {
     <></>
   ) : (
     <>
+      <hr />
       Version {packageJson.version},{" "}
       <IconButton onClick={changeTheme}>
         <Brightness4 />

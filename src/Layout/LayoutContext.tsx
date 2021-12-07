@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext } from "react";
-import { LinearProgress, Snackbar, Alert } from "@mui/material";
+import { /*LinearProgress,*/ Snackbar, Alert } from "@mui/material";
 import Layout from "./Layout";
 
 export const LayoutContext = createContext({
@@ -91,7 +91,9 @@ export function LayoutProvider(props: { children?: React.ReactNode }) {
             {customAlertProps.message}
           </Alert>
         </Snackbar>
-        <LinearProgress style={{ position: "fixed", bottom: "0", height: "4px", width: "100%" }} hidden={!loading} />
+        {/* {!loading && (
+          <LinearProgress style={{ position: "fixed", bottom: "0", height: "4px", width: "100%" }} hidden={!loading} />
+        )} */}
       </Layout>
     </LayoutContext.Provider>
   );
