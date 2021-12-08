@@ -105,28 +105,28 @@ export default function Header({ isAuthenticated, loginWithRedirect, user }: IPr
         <MenuItem
           variant="h6"
           onClick={() => nav("/Correction")}
-          style={{ borderBottom: location.pathname === "/Tasks" ? "4px solid black" : "none" }}
+          style={{ borderBottom: location.pathname === "/Correction" ? "4px solid black" : "none" }}
         >
           Opravování
         </MenuItem>
         <MenuItem
           variant="h6"
-          onClick={() => nav("/Tutorials")}
-          style={{ borderBottom: location.pathname === "/Tasks" ? "4px solid black" : "none" }}
+          onClick={() => nav("/Deployment")}
+          style={{ borderBottom: location.pathname === "/Deployment" ? "4px solid black" : "none" }}
         >
           Deploy úloh
         </MenuItem>
         <MenuItem
           variant="h6"
           onClick={() => nav("/TasksBase")}
-          style={{ borderBottom: location.pathname === "/Tasks" ? "4px solid black" : "none" }}
+          style={{ borderBottom: location.pathname === "/TasksBase" ? "4px solid black" : "none" }}
         >
           Databáze úloh
         </MenuItem>
         <MenuItem
           variant="h6"
           onClick={() => nav("/Mails")}
-          style={{ borderBottom: location.pathname === "/Tasks" ? "4px solid black" : "none" }}
+          style={{ borderBottom: location.pathname === "/Mails" ? "4px solid black" : "none" }}
         >
           Emailing
         </MenuItem>
