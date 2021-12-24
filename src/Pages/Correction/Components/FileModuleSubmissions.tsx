@@ -48,7 +48,7 @@ export default function FileModule({ submissions, updatePoints }: IProps) {
               <TextField variant="standard" value={points} onChange={(e) => setPoints(e.target.value)} label="Výplata" />
               &nbsp;&nbsp;&nbsp;
               <Button onClick={savePoints} color="primary">
-                Uožit body
+                Uložit body
               </Button>
             </Grid>
           </Grid>

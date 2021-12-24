@@ -118,6 +118,13 @@ export default function Header({ isAuthenticated, loginWithRedirect, user }: IPr
         </MenuItem>
         <MenuItem
           variant="h6"
+          onClick={() => nav("/Users")}
+          style={{ borderBottom: location.pathname === "/Mails" ? "4px solid black" : "none" }}
+        >
+          Uživatelé
+        </MenuItem>
+        <MenuItem
+          variant="h6"
           onClick={() => nav("/TasksBase")}
           style={{ borderBottom: location.pathname === "/TasksBase" ? "4px solid black" : "none" }}
         >
