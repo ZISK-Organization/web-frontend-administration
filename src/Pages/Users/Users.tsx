@@ -53,9 +53,6 @@ export default function Users() {
       </Table>
       <br />
       <br />
-      {
-        // TODO - delete mjancovicova@gmail.com next year. This year, I promised to invite her for all our actions because of the help with the propagations.  
-      }
       <Button href={`mailto:${users.map((u) => u.contactMail).join(",")}`} color="primary" variant="contained">
         Odeslat Email všem řešitelům
       </Button>
