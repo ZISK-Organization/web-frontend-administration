@@ -23,7 +23,7 @@ export default function Users() {
     []
   );
 
-  const getCategory = (catId: number) => (catId === 1 ? "Středoškolláci" : catId === 2 ? "Vysokoškoláci" : "Ostatní");
+  const getCategory = (catId: number) => (catId === 1 ? "Středoškoláci" : catId === 2 ? "Vysokoškoláci" : "Ostatní");
 
   return (
     <>
