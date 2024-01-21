@@ -7,6 +7,9 @@ import { profilesService } from "../../Utils/ApiService";
 export default function Users() {
   const [users, setUsers] = useState<User[]>([]);
   const layout = useLayout();
+  const buttonHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
+    navigator.clipboard.writeText(users.map((u) => u.contactMail).join(",\n"));
+  };
 
   useEffect(
     () => {
@@ -55,6 +58,11 @@ export default function Users() {
       <br />
       <Button href={`mailto:${users.map((u) => u.contactMail).join(",")}`} color="primary" variant="contained">
         Odeslat Email všem řešitelům
+      </Button>
+      <br />
+      <br />
+      <Button onClick={buttonHandler} color="primary" variant="contained">
+        Zkopírovat seznam řešitelů do schránky
       </Button>
       <br />
       <br />
